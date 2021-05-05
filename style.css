@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: sans-serif;
+  background-color: black;
+}
+video{
+  height: 100vh;
+}
+
+ video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+h1{
+  color: White;
+}
+.intro h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align:left;
+  transform: translate(-50%,-50%);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 70px;
+}
+.life h1{
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  text-align:left;
+  transform: translate(-50%,-50%);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+}
+.nature h1{
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+}
+.night h1{
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+}
+.day h1{
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+}
+
+section{
+  height: 100vh;
+  color: black;
+}
+button{
+  z-index: 1;
+  position:absolute;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0px none;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  font: 900 0rem 'Montserrat';
+}
+span{
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.button{
+	display: inline-block;
+	position: absolute;
+	overflow: hidden;
+	left: 0%;
+	top: 0%;
+  width: 300px;
+	perspective:400px;
+	background-color: transparent;
+
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.3)));
+
+}
+.button span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: black;
+	color: white;
+  width: 100%;
+
+}
+.button span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,105%,0px) rotateX(-90deg);
+	background-color: white;
+	color: black;
+  width: 100%;
+}
+
+.button:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+.respect{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-face: sans-serif;
+  font-size: 0.5em;
+  color:#444;
+}
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+.footer{
+  z-index: 1;
+}
+.up{
+  display: inline-block;
+	position: absolute;
+	overflow: hidden;
+	left: 95%;
+	top: 90%;
+  width: 80px;
+  transform:rotate(-90deg);
+  text-align: right;
+  z-index: 1;
+}
+.google{
+  box-sizing: border-box;
+  display: inline-block;
+	position: absolute;
+	overflow: hidden;
+	left: 90%;
+	top: 0%;
+  width: 180px;
+  text-align: right;
+  z-index: 1;
+}
+.transparent_btn {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+   margin-left: 380px;
+	display: inline-block;
+	padding: 10px 14px;
+	color: #aeddf5;
+	border: 1px solid  #aeddf5;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 120%;
+	background-color: rgba(255,255,255, 0);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
+	cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.transparent_btn:hover {
+	background-color:  rgba(174, 221, 245, 0.3);
+	color: #FFF;
+}
+.bb{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
